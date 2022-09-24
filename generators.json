@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "name": "NxAzureFunction",
+  "version": "1.0.0",
+  "generators": {
+    "function": {
+      "factory": "./src/generators/function/generator",
+      "schema": "./src/generators/function/schema.json",
+      "description": "Azure function generator"
+    },
+    "init": {
+      "factory": "./src/generators/init/generator",
+      "schema": "./src/generators/init/schema.json",
+      "description": "Azure function app initialize generator"
+    }
+  },
+  "schematics": {
+    "function": {
+      "factory": "./src/generators/function/generator#azureFunctionSchematic",
+      "schema": "./src/generators/function/schema.json",
+      "description": "Azure function schematic"
+    },
+    "init": {
+      "factory": "./src/generators/init/generator#azureFunctionInitSchematic",
+      "schema": "./src/generators/init/schema.json",
+      "description": "Azure function app initialize schematic"
+    }
+  }
+}

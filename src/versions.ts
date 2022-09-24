@@ -1,0 +1,2 @@
+export const AZURE_FUNCTIONS_CORE_TOOLS_VERSION = '^4.0.0';
+export const AZURE_FUNCTIONS_VERSION = '^3.2.0';

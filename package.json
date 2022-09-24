@@ -1,0 +1,42 @@
+{
+  "name": "nx-azure-function",
+  "version": "1.0.0",
+  "description": "NX executors and generators for azure functions",
+  "scripts": {
+    "build-executor-serve": "npx tsc src/executors/serve.ts",
+    "build-generator-init": "npx tsc src/generators/init/generator.ts",
+    "build-generator-function": "npx tsc src/generators/function/generator.ts",
+    "build": "npm run build-executor-serve && npm run build-generator-init && npm run build-generator-function"
+  },
+  "author": {
+    "name": "Egor Dergunov",
+    "email": "e.dergunov@outlook.com"
+  },
+  "homepage": "https://github.com/egorderg/nx-azure-function",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:egorderg/nx-azure-function.git"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "executors.json",
+    "generators.json",
+    "package.json",
+    "src/**/*"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "executors": "./executors.json",
+  "generators": "./generators.json",
+  "schematics": "./generators.json",
+  "builders": "./executors.json",
+  "typings": "./src/index.d.ts",
+  "dependencies": {
+    "@nrwl/devkit": "^14.0.0",
+    "@nrwl/workspace": "^14.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  }
+}
