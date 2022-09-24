@@ -18,7 +18,7 @@ function updateAzureProjectConfiguration(host: Tree, options: AzureFunctionAppIn
   }
 
   projectConfiguration.targets['serve'] = {
-    executor: '@nx-azure-function:serve',
+    executor: 'nx-azure-function:serve',
     options: {
       buildTarget: 'build',
     },
