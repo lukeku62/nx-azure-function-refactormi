@@ -1,4 +1,4 @@
-import { ExecutorContext, runExecutor } from '@nrwl/devkit';
+import { ExecutorContext, runExecutor } from '@nx/devkit';
 import { spawn, ChildProcess } from 'child_process';
 import { dirname } from 'path';
 
